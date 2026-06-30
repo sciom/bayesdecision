@@ -38,11 +38,10 @@ authors:
     email: tamara.djerdj@biologija.unios.hr
     affiliation: "Department of Biology, Josip Juraj Strossmayer University of Osijek, Croatia"
     # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add ORCID
-# Optional: once the Zenodo DOI exists you may add it here so the badge/citation resolve to the archive:
-# identifiers:
-#   - type: doi
-#     value: "10.5281/zenodo.XXXXXXX"
-#     description: "Concept DOI (all versions)"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21073700"
+    description: "Zenodo archived release"
 preferred-citation:
   type: article
   title: "Cost-calibrated decision rules for small-sample experimental screening pipelines"
