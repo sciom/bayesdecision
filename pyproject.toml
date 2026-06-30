@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayes-decision"
+version = "0.1.0"
+description = "Bayesian decision-theoretic framework for small-sample experiments"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Branimir K. Hackenberger", email = "branimir@sciom.hr"},
+    {name = "Domagoj K. Hackenberger", email = "dhackenb@irb.hr"},
+    {name = "Tamara Djerdj", email = "tamara.djerdj@biologija.unios.hr"},
+]
+keywords = ["bayesian", "decision-theory", "small-sample", "statistics", "expected-loss"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/sciom/bayesdecision"
+Repository = "https://github.com/sciom/bayesdecision"
+Issues = "https://github.com/sciom/bayesdecision/issues"
+
+[project.optional-dependencies]
+gpu = ["torch>=2.0"]
+parallel = ["joblib>=1.2"]
+viz = ["matplotlib>=3.5"]
+all = ["torch>=2.0", "joblib>=1.2", "matplotlib>=3.5"]
+
+[tool.setuptools.packages.find]
+where = ["."]

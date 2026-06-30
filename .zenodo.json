@@ -1,0 +1,39 @@
+{
+  "title": "bayes-decision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)",
+  "description": "Python implementation of a cost-calibrated decision-theoretic framework for small-sample experimental screening pipelines. The framework unifies frequentist testing, Bayesian posterior thresholding and Bayes-factor analysis as special cases of a single cost-parameterised family, and provides closed-form cost-calibrated thresholds, a Bayes risk decomposition with a closed-form crossover condition, and a two-stage pipeline optimality result with controlled false-discovery rate. An R implementation is available separately as 'bayesDecisionR'. Accompanies the article 'Cost-calibrated decision rules for small-sample experimental screening pipelines' (Scientific Reports).",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "language": "eng",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Hackenberger, Branimir K.",
+      "affiliation": "Department of Biology, Josip Juraj Strossmayer University of Osijek, Croatia; SCIOM, Osijek, Croatia"
+    },
+    {
+      "name": "Hackenberger, Domagoj K.",
+      "affiliation": "Division for Marine and Environmental Research, Rudjer Boskovic Institute, Zagreb, Croatia"
+    },
+    {
+      "name": "Djerdj, Tamara",
+      "affiliation": "Department of Biology, Josip Juraj Strossmayer University of Osijek, Croatia"
+    }
+  ],
+  "keywords": [
+    "Bayesian decision theory",
+    "small-sample inference",
+    "optimal decision rules",
+    "cost-calibrated thresholds",
+    "sequential error control",
+    "false discovery rate",
+    "Python"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/sciom/bayesdecision",
+      "scheme": "url"
+    }
+  ]
+}

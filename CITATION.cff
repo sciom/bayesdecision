@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software (this file) and the accompanying article (see preferred-citation)."
+title: "bayes-decision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)"
+abstract: >-
+  Python implementation of a cost-calibrated decision-theoretic framework for small-sample
+  experimental screening pipelines. The framework unifies frequentist testing, Bayesian
+  posterior thresholding and Bayes-factor analysis as special cases of a single
+  cost-parameterised family, and provides closed-form cost-calibrated thresholds, a Bayes
+  risk decomposition, and a two-stage pipeline optimality result with controlled
+  false-discovery rate. An R implementation is available separately as 'bayesDecisionR'.
+type: software
+version: 0.1.0
+# TODO: set to the actual GitHub release date (YYYY-MM-DD) before publishing the release
+date-released: "2026-06-30"
+license: MIT
+repository-code: "https://github.com/sciom/bayesdecision"
+url: "https://github.com/sciom/bayesdecision"
+keywords:
+  - Bayesian decision theory
+  - small-sample inference
+  - optimal decision rules
+  - cost-calibrated thresholds
+  - sequential error control
+  - false discovery rate
+authors:
+  - family-names: Hackenberger
+    given-names: "Branimir K."
+    email: branimir@sciom.hr
+    affiliation: "Department of Biology, Josip Juraj Strossmayer University of Osijek, Croatia; Department of Environmental Intelligence and Technology, SCIOM, Osijek, Croatia"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add ORCID
+  - family-names: Hackenberger
+    given-names: "Domagoj K."
+    email: dhackenb@irb.hr
+    affiliation: "Division for Marine and Environmental Research, Rudjer Boskovic Institute, Zagreb, Croatia"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add ORCID
+  - family-names: Djerdj
+    given-names: Tamara
+    email: tamara.djerdj@biologija.unios.hr
+    affiliation: "Department of Biology, Josip Juraj Strossmayer University of Osijek, Croatia"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add ORCID
+# Optional: once the Zenodo DOI exists you may add it here so the badge/citation resolve to the archive:
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXX"
+#     description: "Concept DOI (all versions)"
+preferred-citation:
+  type: article
+  title: "Cost-calibrated decision rules for small-sample experimental screening pipelines"
+  authors:
+    - family-names: Hackenberger
+      given-names: "Branimir K."
+    - family-names: Hackenberger
+      given-names: "Domagoj K."
+    - family-names: Djerdj
+      given-names: Tamara
+  journal: "Scientific Reports"
+  year: 2026
+  notes: "Under revision; update volume/pages/DOI on acceptance."
