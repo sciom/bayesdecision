@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the software (this file) and the accompanying article (see preferred-citation)."
-title: "bayes-decision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)"
+title: "bayesdecision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)"
 abstract: >-
   Python implementation of a cost-calibrated decision-theoretic framework for small-sample
   experimental screening pipelines. The framework unifies frequentist testing, Bayesian

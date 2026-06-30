@@ -1,4 +1,4 @@
-# bayes-decision
+# bayesdecision
 
 Bayesian decision-theoretic framework for small-sample experiments.
 
@@ -14,7 +14,7 @@ pip install -e ".[all]"     # + GPU + parallel + plots
 
 ```python
 import numpy as np
-from bayes_decision import bayes_decision, check_system
+from bayesdecision import bayes_decision, check_system
 
 # Check your hardware
 check_system()
@@ -25,6 +25,6 @@ result = bayes_decision(rng.normal(0.8, 1, 5), rng.normal(0, 1, 5))
 print(result)
 
 # GPU-accelerated Monte Carlo (1 million reps)
-from bayes_decision import expected_loss_gpu
+from bayesdecision import expected_loss_gpu
 el = expected_loss_gpu(n=5, delta=0.5, reps=1_000_000)
 ```

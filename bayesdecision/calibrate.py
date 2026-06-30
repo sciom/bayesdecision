@@ -5,7 +5,7 @@ from __future__ import annotations
 import numpy as np
 from scipy import stats, optimize
 
-from bayes_decision.core import expected_loss
+from bayesdecision.core import expected_loss
 
 
 def calibrate_loss(

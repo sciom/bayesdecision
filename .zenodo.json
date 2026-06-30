@@ -1,5 +1,5 @@
 {
-  "title": "bayes-decision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)",
+  "title": "bayesdecision: Cost-calibrated Bayesian decision rules for small-sample screening pipelines (Python package)",
   "description": "Python implementation of a cost-calibrated decision-theoretic framework for small-sample experimental screening pipelines. The framework unifies frequentist testing, Bayesian posterior thresholding and Bayes-factor analysis as special cases of a single cost-parameterised family, and provides closed-form cost-calibrated thresholds, a Bayes risk decomposition with a closed-form crossover condition, and a two-stage pipeline optimality result with controlled false-discovery rate. An R implementation is available separately as 'bayesDecisionR'. Accompanies the article 'Cost-calibrated decision rules for small-sample experimental screening pipelines' (Scientific Reports).",
   "upload_type": "software",
   "version": "0.1.0",

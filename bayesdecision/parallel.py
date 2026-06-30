@@ -7,7 +7,7 @@ import shutil
 import subprocess
 from multiprocessing import cpu_count
 
-from bayes_decision.core import expected_loss
+from bayesdecision.core import expected_loss
 
 
 def check_system(verbose: bool = True) -> dict:
@@ -94,7 +94,7 @@ def check_system(verbose: bool = True) -> dict:
         info["advice"].append("Install torch for GPU: pip install torch")
 
     if verbose:
-        print("=== bayes_decision System Diagnostics ===\n")
+        print("=== bayesdecision System Diagnostics ===\n")
         print(f"CPU cores:       {info['cpu_cores']}")
         print(f"Parallel (joblib): {'READY' if info['has_joblib'] else 'NOT AVAILABLE'}")
         if info["has_joblib"]:
@@ -124,14 +124,14 @@ def check_system(verbose: bool = True) -> dict:
 
         print(f"\n=== Recommended ===")
         if info["torch_cuda"]:
-            print(f"  from bayes_decision import expected_loss_gpu")
+            print(f"  from bayesdecision import expected_loss_gpu")
             print(f"  results = expected_loss_gpu(n=5, delta=0.5, reps=1_000_000)")
         elif info["has_joblib"]:
             n_w = max(1, info["cpu_cores"] - 1)
-            print(f"  from bayes_decision import expected_loss_grid")
+            print(f"  from bayesdecision import expected_loss_grid")
             print(f"  results = expected_loss_grid([3,5,10], [0,0.2,0.5,0.8], n_jobs={n_w})")
         else:
-            print(f"  from bayes_decision import expected_loss")
+            print(f"  from bayesdecision import expected_loss")
             print(f"  results = expected_loss(n=5, delta=0.5)")
 
     return info

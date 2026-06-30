@@ -1,9 +1,9 @@
-"""Tests for bayes_decision core functionality."""
+"""Tests for bayesdecision core functionality."""
 
 import numpy as np
 import pytest
 
-from bayes_decision import (
+from bayesdecision import (
     bayes_posterior, bayes_factor, bayes_decision, BayesDecision,
     expected_loss, realized_loss, realized_loss_magnitude,
     optimal_alpha, sequential_decision, base_rate_analysis,
@@ -265,7 +265,7 @@ class TestEdgeCases:
         assert 0 <= br["pi1_estimate"]["pi1_hat"] <= 1
 
     def test_pipeline_fdr(self):
-        from bayes_decision import pipeline_fdr
+        from bayesdecision import pipeline_fdr
         r = pipeline_fdr(0.80, 1.0, 5, 0.5, 0.5)
         assert 0 <= r["fdr_pipeline"] <= 1
         assert 0 <= r["fpr_stage1"] <= 1

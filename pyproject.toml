@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bayes-decision"
+name = "bayesdecision"
 version = "0.1.0"
 description = "Bayesian decision-theoretic framework for small-sample experiments"
 readme = "README.md"
